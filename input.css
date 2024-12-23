@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  h3{
+    @apply text-4xl mb-8 font-bold text-darkGrayishBlue md:text-5xl
+  }
+
+  h5{
+    @apply text-2xl font-bold text-darkGrayishBlue mb-2
+  }
+
+ 
+}
+
+.section-container{
+  @apply max-w-6xl mx-auto text-center;
+}
+
+.section-content{
+  @apply max-w-3xl mx-auto leading-9 text-grayishBlue text-center
+}
+
+.button-container{
+  @apply flex flex-col justify-center w-[90%] mx-auto space-y-6 text-xl text-white md:flex-row  md:space-y-0 md:space-x-4
+}
+
+.footer-menu{
+  @apply flex flex-col items-center md:items-start space-y-4
+}
+
+.ficon:hover {
+  filter: invert(53%) sepia(68%) saturate(434%) hue-rotate(121deg)
+    brightness(101%) contrast(94%);
+}
+
+
+
+body {
+    background-image: url('../images/bg-header-desktop.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  @media (max-width: 576px) {
+    body {
+      background-image: url('../images/bg-header-mobile.png');
+    }
+  }
